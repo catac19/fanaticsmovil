@@ -1,6 +1,29 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+
 <ion-content class="page-background">
-  <div class="content-box"></div>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="openMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        <img src="assets/fanaticsfilm.png" width="100px" alt="Logo" class="logo">
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-menu side="start" contentId="main-content">
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Iniciar Sesión</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Registrarse</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
 </ion-content>

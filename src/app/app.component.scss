@@ -3,3 +3,10 @@ ion-content {
     no-repeat center center /
     cover;
 }
+
+ion-header {
+    ion-toolbar {
+      background-color: rgba(255, 255, 255, 0.1); /* Ajusta el valor de transparencia aquí */
+      backdrop-filter: blur(10px); /* Opcional: agrega un efecto de desenfoque al fondo */
+    }
+  }
